@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registro de Usuario</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<h1><i class="fas fa-user-plus"></i> REGISTRO DE USUARIO</h1>
+
+<form action="#" method="post">
+
+<!-- DATOS PERSONALES -->
+<fieldset>
+<legend>👤 Información Personal</legend>
+
+<label>Foto de Perfil:</label>
+<input type="file" accept="image/*"><br><br>
+
+<label for="nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre"
+placeholder="Ingrese su nombre" required>
+
+<label for="apellido">Apellidos:</label>
+<input type="text" id="apellido" name="apellido"
+placeholder="Ingrese sus apellidos" required>
+
+<label for="dni">DNI:</label>
+<input type="text" id="dni" maxlength="8"
+placeholder="12345678" required>
+
+<label for="fecha_naci">Fecha de Nacimiento:</label>
+<input type="date" id="fecha_naci" required>
+
+<label for="edad">Edad:</label>
+<input type="number" id="edad" min="18" max="100">
+
+<p><strong>Género:</strong></p>
+
+<input type="radio" id="masculino" name="genero" required>
+<label for="masculino">Masculino</label>
+
+<input type="radio" id="femenino" name="genero">
+<label for="femenino">Femenino</label>
+
+<input type="radio" id="otro" name="genero">
+<label for="otro">Otro</label>
+
+</fieldset>
+
+<!-- CONTACTO -->
+<fieldset>
+<legend>📞 Información de Contacto</legend>
+
+<label>Correo Electrónico:</label>
+<input type="email"
+placeholder="ejemplo@gmail.com" required>
+
+<label>Confirmar Correo:</label>
+<input type="email"
+placeholder="Repita su correo" required>
+
+<label>Teléfono:</label>
+<input type="tel"
+placeholder="987654321"
+pattern="[0-9]{9}" required>
+
+<label>País:</label>
+<select required>
+<option value="">Seleccione</option>
+<option>Perú</option>
+<option>Bolivia</option>
+<option>Chile</option>
+<option>Argentina</option>
+</select>
+
+<label>Ciudad:</label>
+<input type="text"
+placeholder="Ingrese ciudad">
+
+<label>Dirección:</label>
+<textarea rows="4"
+placeholder="Ingrese su dirección"></textarea>
+
+</fieldset>
+
+<!-- CUENTA -->
+<fieldset>
+<legend>🔐 Información de Cuenta</legend>
+
+<label>Nombre de Usuario:</label>
+<input type="text"
+placeholder="Usuario123" required>
+
+<label>Contraseña:</label>
+<input type="password"
+placeholder="********" required>
+
+<label>Confirmar Contraseña:</label>
+<input type="password"
+placeholder="********" required>
+
+<label>Nivel de Seguridad:</label>
+<meter min="0" max="100" value="80"></meter>
+
+</fieldset>
+
+<!-- PREFERENCIAS -->
+<fieldset>
+<legend>⚙ Preferencias</legend>
+
+<label>Color Favorito:</label>
+<select>
+<option>Rojo</option>
+<option>Azul</option>
+<option>Verde</option>
+<option>Amarillo</option>
+<option>Negro</option>
+<option>Morado</option>
+</select>
+
+<p><strong>Intereses:</strong></p>
+
+<input type="checkbox"> Tecnología
+<input type="checkbox"> Deportes
+<input type="checkbox"> Música
+<input type="checkbox"> Viajes
+<input type="checkbox"> Programación
+
+<br><br>
+
+<input type="checkbox" required>
+Acepto los Términos y Condiciones
+
+</fieldset>
+
+<div class="botones">
+<button type="submit">
+<i class="fas fa-user-check"></i> Registrarse
+</button>
+
+<button type="reset">
+<i class="fas fa-trash"></i> Limpiar
+</button>
+</div>
+
+</form>
+
+</div>
+
+</body>
+</html>
